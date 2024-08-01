@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name=author content=jj />
+	<meta name=description content="web test" />
+	<meta property="og:image" content="https://developer.mozilla.org/mdn-social-share.png" />
+	<meta property="og:description" content="web test" />
+	<meta property="og:title" content="Mozilla Developer Network" />
+	<link rel="icon" href="https://rowlow0.github.io/images/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="https://rowlow0.github.io/images/apple-touch-icon.png" type="image/png" />
+	<link rel="icon" href="https://rowlow0.github.io/images/favicon-16x16.png" type="image/png" />
+	<link rel="icon" href="https://rowlow0.github.io/images/favicon-32x32.png" type="image/png" />
+	<link rel="android-chrome" size="192x192" href="https://rowlow0.github.io/images/android-chrome-192x192.png" type="image/png" />
+	<link rel="android-chrome" size="512x512" href="https://rowlow0.github.io/images/android-chrome-512x512.png" type="image/png" />
+
+	<title>My test page</title>
+	<link href="styles/style.css" rel="stylesheet" />
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" /> -->
+</head>
+<body>
+	<h1>images in HTMl</h1>
+	<img src="https://rowlow0.github.io/images/favorite-1.jpg" alt="bird1" />
+
+	<img title="something" alt="something" height="171" width="200" src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"\>
+	<figure>
+		<img alt="something" height=171px width=200px src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"\>
+		<figcaption>
+			A T-Rex on display in the egypt University Museum.
+		</figcaption>
+	</figure>
+	<hr />
+	<p>Never point the src attribute at an image hosted on someone else's website without permission. It's called hotlinking. You can't control that image is removed or replaced with something dangerous.</p>
+	<p>Using the width and height attributes to know for the browser.</p>
+	<p>if you do need to alter an images's size, you should use CSS instead.</p>
+	<script src="scripts/main.js"></script>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Gq9AJZMjfIM?si=ciNFWmHThsS4VCcz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.981647964846!2d-73.97636892316474!3d40.762428371386086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258faf553cfad%3A0x8e9cfc7444d8f876!2sTrump%20Tower!5e0!3m2!1sen!2sus!4v1722522435786!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<p>configure CSP directives</p>
+</body>
+</html>
