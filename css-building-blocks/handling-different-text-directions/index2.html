@@ -17,11 +17,59 @@
 
 	<title>My test page</title>
 	<style>
-		
+.box {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+  writing-mode: vertical-rl;
+}
+.box2 {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+  inline-size: 200px;
+  block-size : 100px;
+}
+.vertical {
+	writing-mode: vertical-rl;
+}
+.box3 {
+  inline-size: 150px;
+  block-size: 150px;
+
+  margin-bottom: 30px;
+  padding-top: 40px;
+  border-top: 5px solid rebeccapurple;
+  border-right: 5px solid grey;
+  border-bottom: 5px dotted red;
+  border-left: 5px dotted blue;
+
+}
+
+.vertical2 {
+	writing-mode: vertical-rl;
+
+	margin-block-end: 20px;
+	padding-block-start: 2px;
+	border-block-start: 5px solid rebeccapurple;
+  	border-inline-end: 5px solid grey;
+  	border-block-end: 5px dotted red;
+  	border-inline-start: 5px dotted blue;
+}
 	</style>
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" /> -->
 </head>
 <body>
-	
+	<div class="box">Turn me on my side.</div>
+	<br/>
+	<div class="box2">Horizontal.</div>
+	<div class="box2 vertical">Vertical.</div>
+	<br/>
+	<div class="box3">Horizontal.</div>
+<div class="box3 vertical2">Vertical.</div>
+	<br />
+
 </body>
 </html>

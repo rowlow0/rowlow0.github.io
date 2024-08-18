@@ -17,11 +17,75 @@
 
 	<title>My test page</title>
 	<style>
-		
+.hex {
+  background-color: #86DEFA;
+}
+
+.rgb {
+background-color: rgb(134,222,250);
+}
+
+.hsl {
+	background-color: hsl(194, 92%, 75%);
+}
+
+.transparency {
+	background-color: rgb(134,222,250, 0.6);
+}
+.box ul li{
+	padding: 20px;
+	margin: 20px;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+p {
+	font-size: 16px;
+}
+
+h1+p {
+	font-size: 120%;
+}
+
+.box2 {
+  background-image: url(star.png);
+  background-repeat: no-repeat;
+  background-position:center 20%;
+  border: 1px solid black;
+  display: block;
+  height: 100px;
+  width: 200px;
+}
+
 	</style>
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" /> -->
 </head>
 <body>
-	
+	<div class="box">
+	<ul>
+		<li class="hex">hex color</li>
+		<li class="rgb">RGB color</li>
+		<li class="hsl">HSL color</li>
+		<li class="transparency">Alpha value 0.6</li>
+	  </ul>
+	</div>
+	<br/>
+
+	<h1>Level 1 heading</h1>
+<p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+<h2>Level 2 heading</h2>
+<p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+
+	<br/>
+	<div class="box2">
+
+	</div>
+	<br>
 </body>
 </html>

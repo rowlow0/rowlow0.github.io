@@ -17,11 +17,41 @@
 
 	<title>My test page</title>
 	<style>
-		
+	a {
+		background-color: yellow !important;
+		color:aqua;
+	}
+@layer yellow, green, purple;
+@layer yellow {
+  #outer div ul .nav a {
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}
+@layer purple {
+  div div li a {
+	background-color: blue !important;
+    color: rebeccapurple;
+  }
+}
+@layer green {
+  a {
+	background-color: green !important;
+    color: lightgreen;
+  }
+}
 	</style>
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" /> -->
 </head>
 <body>
-	
+	<div id="outer" class="container">
+		<div id="inner" class="container">
+		  <ul>
+			<li class="nav"><a href="#">One</a></li>
+			<li class="nav"><a href="#">Two</a></li>
+		  </ul>
+		</div>
+	  </div>
 </body>
 </html>

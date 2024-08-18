@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name=author content=jj />
+	<meta name=description content="web test" />
+	<meta property="og:image" content="https://developer.mozilla.org/mdn-social-share.png" />
+	<meta property="og:description" content="web test" />
+	<meta property="og:title" content="Mozilla Developer Network" />
+	<link rel="icon" href="https://rowlow0.github.io/images/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="https://rowlow0.github.io/images/apple-touch-icon.png" type="image/png" />
+	<link rel="icon" href="https://rowlow0.github.io/images/favicon-16x16.png" type="image/png" />
+	<link rel="icon" href="https://rowlow0.github.io/images/favicon-32x32.png" type="image/png" />
+	<link rel="android-chrome" size="192x192" href="https://rowlow0.github.io/images/android-chrome-192x192.png" type="image/png" />
+	<link rel="android-chrome" size="512x512" href="https://rowlow0.github.io/images/android-chrome-512x512.png" type="image/png" />
+
+	<title>My test page</title>
+	<style>
+		table {
+			width: 100%;
+			table-layout: fixed;
+			border-spacing:0;
+			border-collapse: collapse;
+			border-top: 1px solid #999;
+			border-bottom: 1px solid #999;
+		}
+		th, td {
+			padding: 0.3em;
+		}
+
+		tbody tr th:nth-child(1), thead tr th:nth-child(1) {
+			text-align: left;
+		}
+
+		tbody tr td:nth-child(2), thead tr th:nth-child(2) {
+			text-align: right;
+		}
+		tbody tr td:nth-child(3), thead tr th:nth-child(3) {
+			text-align: right;
+		}
+		tbody tr td:nth-child(4), thead tr th:nth-child(4) {
+			text-align: left;
+		}
+
+tfoot tr th {
+  text-align: right;
+}
+
+tfoot tr td {
+  text-align: left;
+}
+tfoot {
+	border-top: 1px solid #999;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(128,128,128, 0.15);
+}
+
+/* tbody tr:nth-child(even) {
+  background-color: #e495e4;
+} */
+	</style>
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" /> -->
+</head>
+<body>
+	<table>
+		<caption>A summary of the UK's most famous punk bands</caption>
+		<thead>
+		  <tr>
+			<th scope="col">Band</th>
+			<th scope="col">Year formed</th>
+			<th scope="col">No. of Albums</th>
+			<th scope="col">Most famous song</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<th scope="row">Buzzcocks</th>
+			<td>1976</td>
+			<td>9</td>
+			<td>Ever fallen in love (with someone you shouldn't've)</td>
+		  </tr>
+		  <tr>
+			<th scope="row">The Clash</th>
+			<td>1976</td>
+			<td>6</td>
+			<td>London Calling</td>
+		  </tr>
+		  <tr>
+			<th scope="row">The Damned</th>
+			<td>1976</td>
+			<td>10</td>
+			<td>Smash it up</td>
+		  </tr>
+		  <tr>
+			<th scope="row">Sex Pistols</th>
+			<td>1975</td>
+			<td>1</td>
+			<td>Anarchy in the UK</td>
+		  </tr>
+		  <tr>
+			<th scope="row">Sham 69</th>
+			<td>1976</td>
+			<td>13</td>
+			<td>If the kids are united</td>
+		  </tr>
+		  <tr>
+			<th scope="row">Siouxsie and the Banshees</th>
+			<td>1976</td>
+			<td>11</td>
+			<td>Hong Kong Garden</td>
+		  </tr>
+		  <tr>
+			<th scope="row">Stiff Little Fingers</th>
+			<td>1977</td>
+			<td>10</td>
+			<td>Suspect Device</td>
+		  </tr>
+		  <tr>
+			<th scope="row">The Stranglers</th>
+			<td>1974</td>
+			<td>17</td>
+			<td>No More Heroes</td>
+		  </tr>
+		</tbody>
+		<tfoot>
+		  <tr>
+			<th scope="row" colspan="2">Total albums</th>
+			<td colspan="2">77</td>
+		  </tr>
+		</tfoot>
+	  </table>
+</body>
+</html>

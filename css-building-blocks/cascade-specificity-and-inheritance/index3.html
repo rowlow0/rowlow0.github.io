@@ -16,12 +16,27 @@
 	<link rel="android-chrome" size="512x512" href="https://rowlow0.github.io/images/android-chrome-512x512.png" type="image/png" />
 
 	<title>My test page</title>
-	<style>
-		
-	</style>
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" /> -->
+	 <style>
+#winning {
+  background-color: red;
+  border: 12px solid yellow;
+}
+
+.better {
+  background-color: gray;
+  border: none !important;
+}
+
+p {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+}
+	 </style>
 </head>
 <body>
-	
+	<p class="better">This is a paragraph.</p>
+	<p class="better" id="winning">One selector to rule them all!</p>
 </body>
 </html>

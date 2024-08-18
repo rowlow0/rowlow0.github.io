@@ -17,11 +17,35 @@
 
 	<title>My test page</title>
 	<style>
-		
+		p {
+  margin: 0;
+}
+
+article {
+  max-width: 500px;
+  padding: 10px;
+  background-color: red;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 0%),
+    rgb(0 0 0 / 25%)
+  );
+}
+
+.simple {
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 70%);
+}
+
 	</style>
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" /> -->
 </head>
 <body>
-	
+	<article class="simple">
+		<p>
+		  <strong>Warning</strong>: The thermostat on the cosmic transcender has
+		  reached a critical level.
+		</p>
+	  </article>
+	  
 </body>
 </html>

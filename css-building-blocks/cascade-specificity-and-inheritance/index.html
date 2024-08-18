@@ -17,11 +17,58 @@
 
 	<title>My test page</title>
 	<style>
-		
+body {
+  color: green;
+}
+
+a {
+	color:red;
+}
+
+.my-class-1 a {
+  color: inherit;
+}
+
+.my-class-2 a {
+  color: initial;
+}
+
+.my-class-3 a {
+  color: unset;
+}
+
+.my-class-4 a {
+  all:unset;
+}
+
+blockquote {
+  background-color: orange;
+  border: 2px solid blue;
+}
+
+.fix-this {
+  all: unset;
+}
+
 	</style>
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" /> -->
 </head>
 <body>
-	
+	<ul>
+		<li>Default <a href="#">link</a> color</li>
+		<li class="my-class-1">Inherit the <a href="#">link</a> color</li>
+		<li class="my-class-2">Reset the <a href="#">link</a> color</li>
+		<li class="my-class-3">Unset the <a href="#">link</a> color</li>
+		<li class="my-class-4">Unset the <a href="#">link</a> color</li>
+	  </ul>
+	  <hr/>
+	  <hr/>
+	  <blockquote>
+		<p>This blockquote is styled</p>
+	  </blockquote>
+	  
+	  <blockquote class="fix-this">
+		<p>This blockquote is not styled</p>
+	  </blockquote>
 </body>
 </html>

@@ -17,11 +17,48 @@
 
 	<title>My test page</title>
 	<style>
-		
+div {
+  height: 150px;
+  width: 150px;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+div {
+  background-color: wheat; /**/
+  color: pink !important;
+}
+
+@layer components {
+  div {
+    background-color: yellow;
+    border: 1rem dashed red;  /**/
+    color: orange !important;
+  }
+}
+
+@layer components.narrow {
+  div {
+    background-color: skyblue;
+    border: 1rem dashed blue;
+    color: purple !important; /**/
+    border-radius: 50%;
+  }
+}
+
+@layer components.wide {
+  div {
+    background-color: limegreen;
+    border: 1rem dashed green;
+    color: seagreen !important;
+    border-radius: 20%; /**/
+  }
+}
 	</style>
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" /> -->
 </head>
 <body>
-	
+	<div>Text</div>
 </body>
 </html>

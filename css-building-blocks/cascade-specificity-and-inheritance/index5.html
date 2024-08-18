@@ -17,11 +17,27 @@
 
 	<title>My test page</title>
 	<style>
-		
+	#outer div ul .nav a {
+		background-color: powderblue;
+  		padding: 5px;
+  		display: inline-block;
+  		margin-bottom: 10px;
+		background-color: unset;
+	}
+	div div li a {
+  		color: rebeccapurple;
+	}
 	</style>
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" /> -->
 </head>
 <body>
-	
+	<div id="outer" class="container">
+		<div id="inner" class="container">
+		  <ul>
+			<li class="nav"><a href="#">One</a></li>
+			<li class="nav"><a href="#">Two</a></li>
+		  </ul>
+		</div>
+	  </div>
 </body>
 </html>

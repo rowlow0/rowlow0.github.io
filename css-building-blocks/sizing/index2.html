@@ -17,11 +17,26 @@
 
 	<title>My test page</title>
 	<style>
-		
+		* {
+  box-sizing: border-box;
+}
+.box {
+	border:10px solid black;
+	width:80%;
+}
+.inner {
+	background-color: purple;
+	color:white;
+	width:60%;
+	padding:6%;
+	border-radius: 10px;
+}
 	</style>
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" /> -->
 </head>
 <body>
-	
+	<div class="box">
+		<div class="inner">Make me 60% of my parent's width.</div>
+	  </div>
 </body>
 </html>
